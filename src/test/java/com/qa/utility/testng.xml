@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.utility.Reporting"></listener>
+	</listeners>
+	<test thread-count="7" name="Makemytrip Testing">
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="Url" value="https://www.makemytrip.com/"></parameter>
+		<classes>
+            <class name="com.qa.testscripts.TC_FlightReservation_001" />
+			<class name="com.qa.testscripts.TC_Hotel_001" />
+			<class name="com.qa.testscripts.TC_BookVillasAndApt_01" />
+	        <class name="com.qa.testscripts.TC_TrainReservation_001" />
+			<class name="com.qa.testscripts.TC_SearchBuses_001" />
+			<class name="com.qa.testscripts.TC_CabBooking_001" />
+		</classes>
+	</test> 
+	</suite> <!-- Suite -->
+
